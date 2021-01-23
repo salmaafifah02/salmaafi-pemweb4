@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<html lang="id">
+    <head>	
+        <title>IMAGE PICKER</title></head>
+        <style type="text/css">
+        body
+            {
+             flex: 20px
+               
+            } 
+        #judul
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }    
+        
+        </style>
+        
+        <body>
+            <h1 id="judul" align="center">Choose your anime chara</h1> 
+              <br>
+                <select onchange="gantigambar();" id="listgambar">
+                <option value="gambarpeta.jpg">Anime Character</option>		
+                		
+                <option value="atsumumiya.jpg">Miya Atsumu</option>
+                <option value="gojo.png">Gojo Satoru</option>
+                <option value="ichigo.png">Kurosaki Ichigo</option>
+                <option value="ichiro.jpg">Yamada Ichiro</option>
+            </select>		
+            <br/>	
+            <img src="gambarpeta.jpg" style="width: 100%" id="gambar">
+            <script type="text/javascript">	
+                function gantigambar()
+                 {		
+                     let gambar = document.getElementById("listgambar").value;		
+                     document.getElementById("gambar").src = gambar;		
+                     alert("Ini adalah " + gambar);	  
+                   }
+               </script>
+         </body>
+</html>

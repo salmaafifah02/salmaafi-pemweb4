@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Mata Uang</title>
+</head>
+<body>
+    <center>
+        <br><br><br><br><br>
+        <h1 style="color: rgb(30, 11, 197);"> Kurs Mata Uang</h1>
+        <br>
+        <label for=""> Nilai Mata Uang Asing</label>
+        <input type="number" id="input_kurs" value="">
+        <br><br>
+        <input type="submit" value="Dollar US" onclick="Dollar()">
+        <input type="submit" value="Riyal" onclick="Riyal()">
+        <input type="submit" value="Dinar Kuwait" onclick="DinarKuwait()">
+        <input type="submit" value="Euro" onclick="Euro()">
+        <input type="submit" value="Poundsterling" onclick="Poundsterling()">
+    
+        <p id="hasil"> Hasil dalam (Rp.): </p>
+        <br>
+        <script>
+            function Dollar(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 14000;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Riyal(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 3785;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function DinarKuwait(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 46600;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Euro(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 17000;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+            function Poundsterling(){
+            let input_kurs = document.getElementById('input_kurs').value;
+            let hasil_kurs = input_kurs * 19000;
+            document.getElementById("hasil").innerHTML = hasil_kurs;
+            }
+        </script>
+
+    </center>
+</body>
+</html>

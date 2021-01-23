@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <h1>ChatApp</h1>
+    <p>Main tebak tebakan yuk. Coba tebak siapa aku?</p>
+    <input id="pesan" style="width: 50%" type="text" name="pesan">
+    <button type="submit" onclick="tebaknama()">Sudah terpikir aku siapa?</button>
+    <p id="hasil"></p>
+
+    <script>
+        let nama = "Salma";
+        function tebaknama(){
+            document.getElementById("hasil").innerHTML = "Namaku" + nama;
+        }
+    </script>
+</body>
+</html>
